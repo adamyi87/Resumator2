@@ -1,7 +1,7 @@
 class CreateActivities < ActiveRecord::Migration
   def change
     create_table :activities do |t|
-      t.date : date
+      t.date :date
       t.string :title
       t.text :description
 
