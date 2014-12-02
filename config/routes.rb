@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   resources :activities
   
-  resources :pages
+  resources :page
   root :to => "page#index"
   get '/dashboard' => 'page#dashboard'
 
