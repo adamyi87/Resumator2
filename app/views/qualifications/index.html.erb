@@ -11,7 +11,7 @@
   <tbody>
     <% @qualifications.each do |qualification| %>
       <tr>
-        <td><%= qualification. description %></td>
+        <td><%= qualification.description %></td>
         <td><%= link_to 'Show', qualification %></td>
         <td><%= link_to 'Edit', edit_qualification_path(qualification) %></td>
         <td><%= link_to 'Destroy', qualification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
