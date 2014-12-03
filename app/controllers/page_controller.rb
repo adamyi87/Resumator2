@@ -1,6 +1,5 @@
 class PageController < ApplicationController
   def index
-    @user = "Adam Yi"
     @educations = Education.all
     @edu = true
     @experiences = Experience.all
@@ -11,5 +10,9 @@ class PageController < ApplicationController
     @qual = true
   end
   def dashboard
+    @experiences = Experience.all
+    @activities = Activity.all
+    @qualifications = Qualification.all
+    @educations = Education.all
   end
 end
